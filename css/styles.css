@@ -1,0 +1,107 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}.clear{clear:both}.left{float:left}.right{float:right}img.left{margin-right:1em;margin-bottom:1.8em}img.right{margin-left:1em;margin-bottom:1.8em}.text-right{text-align:right}.half{width:45%}.hide{visibility:hidden;width:0!important;height:0!important;line-height:0!important;padding:0!important;margin:0!important}
+
+/* Making shit look good since 2009 */
+
+/* General styles */
+body {margin:0 auto!important; background-color:#fff;}
+body {font-family:Georgia, serif!important; line-height:19px!important;}
+a {font-family:Helvetica, Arial, sans-serif!important;}
+a.logo {font-family:Georgia, serif!important;}
+
+/* Link Styles */
+.actionLink {padding:5px 7px; border-radius:5px; display:inline-block;}
+
+/* White Links */
+#add, .actionLink {color:#fff; font-weight:bold;}
+#add:hover, .actionLink:hover {text-decoration:none;}
+
+/* Dark Links */
+#main-menu a, #userpanel a, .textButton {color:#212121; font-weight:bold; text-shadow:1px 1px 1px #F5F5F5; text-decoration:none;}
+#main-menu a:hover, #userpanel a:hover, .textButton:hover {text-decoration:none;}
+
+/* Backgrounds on Links */
+#unread, .textButton  {
+  background-image: -moz-linear-gradient(100% 100% 90deg, #EBEBEB, #F7F7F7);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F7F7F7), to(#EBEBEB));
+}
+#main-menu a:hover {background:#F7F7F7;} /* #unread and sub links */
+.actionLink {
+  background-image: -moz-linear-gradient(100% 100% 90deg, #84B352, #90C25B);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#90C25B), to(#84B352));
+  text-shadow:1px 1px 1px #97CC5E;
+}
+.actionLink:hover, .textButton:hover {
+  background-image: -moz-linear-gradient(100% 100% 90deg, #8DBF58, #98CC60);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#98CC60), to(#8DBF58));
+  text-shadow:1px 1px 1px #A0D964;
+} 
+.deleteLink, .archiveButton {
+  color:#700;
+  font-weight:bold;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #d74141, #f57676);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f57676), to(#d74141));
+  text-shadow:1px 1px 1px #FA8787;
+}
+.deleteLink:hover, .archiveButton:hover {
+  color:#700;
+  background-image: -moz-linear-gradient(100% 100% 90deg, #E34D4D, #FA8484);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FA8484), to(#E34D4D));
+  text-shadow:1px 1px 1px #FA8787;
+}
+
+/* Specific Link Styles */
+.textButton:hover {color:#fff; border:1px solid #759E49;}
+
+/* Header & Account Menu Layout */
+#header {margin-top:20px; padding-bottom:20px; border-bottom: 2px solid #444;}
+#userpanel {text-align:left!important;}
+#userpanel li {display:inline-block; margin-left:20px;}
+#logo {border:none;}
+
+/* Main Menu */
+#categoryHeader {display:block;}
+
+/* There is probably a better way to do this */
+.border-top:hover {border-radius:5px 5px 0 0!important;}
+.border-bottom:hover {border-radius:0 0 5px 5px!important;}
+.border-top:hover .border-bottom {border-radius:0 0 5px 5px!important;}
+.border-on {border-radius:5px!important;}
+
+#main-menu ul {display:block; overflow:hidden;}
+#main-menu ul li {float:left;}
+#main-menu ul li a {display:block; width:67px; border}
+#main-menu ul li:hover * {display:block;}
+#main-menu ul li ul {display:none; position:absolute; background:#EBEBEB;}
+#main-menu ul li ul li {float:none!important;}
+#main-menu ul li ul li a {display:block; padding:7px 10px;}
+
+#drop li:last-child a {padding-bottom:10px;}
+
+#unread .icon {background: url('./icons.png') 0 -10px no-repeat!important; display:inline-block; width:11px; height:10px; float:right; margin-top:3px;}
+#unread {padding:10px;}
+
+#paginationTop {margin:0;}
+#add {border-radius:5px; display:inline-block; background-color:#8ABA56!important; padding:10px;}
+#add .icon {background: url('./icons.png') 0 -30px no-repeat!important; display:inline-block; width:11px; height:10px; float:right; margin:3px 0 0 10px;}
+#add:hover {background-color:#92C25F!important;}
+
+
+/* Main Content */
+.tableViewCell {border-radius:0px!important; border:none; padding:20px!important; background-color:transparent!important; border-bottom:1px solid #EBEBEB;}
+.tableViewCell:hover {background-color:#FAFAFA!important;}
+.titleRow {width:360px!important;}
+.starBox {padding-top:5px!important;}
+.secondaryControls {text-align:left!important; font-size:9px; height:10px;}
+.secondaryControls span, .secondaryControls a {display:none}
+.secondaryControls .host:first-child {display:inline;}
+.tableViewCell:hover .secondaryControls span, .tableViewCell:hover .secondaryControls a {display:inline!important;}
+.secondaryControls .separator {visibility:hidden;}
+#feature_column {margin-left:20px!important;}
+
+
+/* Sidebar */
+#bookmarkListDeckAdPlaceholder {height:auto;}
+#bookmarkListDeckAdPlaceholder .section_header, #bookmarkListDeckAd {text-align:center;}
+img.ad {margin:0 auto;}
+#deckpromo {margin:0;}
